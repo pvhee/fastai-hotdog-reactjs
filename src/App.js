@@ -199,7 +199,7 @@ export default class App extends React.Component {
                 activeClassName="dropzone--active"
                 accept="image/jpeg,image/jpg">
                 <p className="cross">&#43;</p>
-                <p className="font--centre">Drop image here or <br/>click to upload <br/><span className="font--small">(Images accepted as .jpg .png)</span></p>
+                <p className="font--centre">Drop image here or <br/>click to upload <br/><span className="font--small">(Images accepted as .jpg .jpeg only)</span></p>
               </Dropzone>
               : null}
               {this.state.imageFiles.length > 0 ?
