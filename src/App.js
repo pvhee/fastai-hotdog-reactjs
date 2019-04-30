@@ -160,7 +160,6 @@ export default class App extends React.Component {
   }
 
   makePrediction(url) {
-    url = 'https://github.com/ajschumacher/imagen/blob/master/imagen/n01982650_3524_lobster.jpg?raw=true';
     return new Promise(function(resolve, reject) {
       console.log(url);
       fetch('https://c5nostwq4c.execute-api.us-east-1.amazonaws.com/dev/invoke', {
@@ -218,7 +217,7 @@ export default class App extends React.Component {
             </div>
             <div className="upload-button">
               {this.state.uploading ? <span className="loading"></span> : null}
-              <input className={this.state.uploading ? 'active' : null} type="submit" value={this.state.uploading ? 'Uploading...' : 'Upload photo'} disabled={!this.state.formValid || !this.state.uploadedFile || this.state.uploading} onClick={this.handleFormSubmit.bind(this)} />
+              <input className={this.state.uploading ? 'active' : null} type="submit" value={this.state.uploading ? 'Predicting...' : 'Hotdog or not?'} disabled={!this.state.formValid || !this.state.uploadedFile || this.state.uploading} onClick={this.handleFormSubmit.bind(this)} />
             </div>
           </div>
         </div>
