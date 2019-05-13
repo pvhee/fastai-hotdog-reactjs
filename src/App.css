@@ -130,6 +130,10 @@ span.preview {
   margin: auto;
 }
 
+a {
+  color: #fff;
+}
+
 input[type="email"] {
   display: inline-block;
   width: 255px;

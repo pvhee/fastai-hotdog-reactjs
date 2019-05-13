@@ -189,6 +189,11 @@ export default class App extends React.Component {
       <form>
         {this.state.uploadedFileCloudinaryUrl === '' ?
         <div>
+          <h1>Hotdog or not?</h1>
+          <p>
+              #serverless hotdog or not classifier. 
+              See article on <a href="https://hackernoon.com/building-a-serverless-not-hotdog-classifier-with-aws-sagemaker-and-lambda-dd473cf6506a">hackernoon</a>.
+          </p>
           <div className="FileUpload">
             <div className="dropzone__wrapper">
               {this.state.imageFiles.length < 1 ?
