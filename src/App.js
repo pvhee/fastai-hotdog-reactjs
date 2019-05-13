@@ -225,6 +225,9 @@ export default class App extends React.Component {
               <input className={this.state.uploading ? 'active' : null} type="submit" value={this.state.uploading ? 'Predicting...' : 'Hotdog or not?'} disabled={!this.state.formValid || !this.state.uploadedFile || this.state.uploading} onClick={this.handleFormSubmit.bind(this)} />
             </div>
           </div>
+          <p>
+            <small>Warning: images are stored on <a href="https://cloudinary.com/">cloudinary</a>. Don't share anything you don't want your mum to see.</small>
+          </p>
         </div>
         :
         <div>
